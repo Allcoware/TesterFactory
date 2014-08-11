@@ -3,6 +3,11 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<parameter name="cab" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[Where
+$F{field}=$P{cab}]]>
+	</queryString>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -21,7 +26,22 @@
 		<band height="35" splitType="Stretch"/>
 	</pageHeader>
 	<columnHeader>
-		<band height="61" splitType="Stretch"/>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="171" height="61" uuid="ab706394-877f-498a-a5a8-32bfde8c5c19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Cab ID:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="171" y="0" width="384" height="61" uuid="81e6f238-4b8f-4c1c-bc53-c442e5d44cdd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cab}]]></textFieldExpression>
+			</textField>
+		</band>
 	</columnHeader>
 	<detail>
 		<band height="125" splitType="Stretch"/>

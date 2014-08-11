@@ -120,7 +120,7 @@ public class CabForm extends JResourceForm<Cab> {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
-            new ReportPrinter(cab);
+            new ReportPrinter(jTextField1.getText());
         } catch (JRException ex) {
             Logger.getLogger(CabForm.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -135,7 +135,7 @@ public class CabForm extends JResourceForm<Cab> {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        //jTextField1.setText(cab.getCabID());
+      
     }//GEN-LAST:event_jTextField1ActionPerformed
 
 

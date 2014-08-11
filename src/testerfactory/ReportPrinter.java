@@ -21,14 +21,14 @@ import net.sf.jasperreports.view.JasperViewer;
  */
 public class ReportPrinter {
 
-    public ReportPrinter(Cab cab) throws JRException {
-        //System.out.println("Sucess: "+cab.getCabID());
+    public ReportPrinter(String cab) throws JRException {
+        //System.out.println("Sucess: "+cab);
 
         try {
             String reportSource = "C:\\Users\\Reaper\\Documents\\NetBeansProjects\\TesterFactory\\build\\classes\\testerfactory\\cabReport.jrxml";
             Map<String, Object> params = new HashMap<String, Object>();
             
-            
+            params.put("cab", cab);
             
             JasperReport jasperReport = JasperCompileManager.compileReport(reportSource);
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, params, new JREmptyDataSource());
