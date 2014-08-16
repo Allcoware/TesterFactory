@@ -12,7 +12,7 @@
 		<band height="39" splitType="Stretch">
 			<textField>
 				<reportElement x="0" y="0" width="555" height="34" uuid="c1a5aebb-b67c-4d86-88f0-6fff07d5a608"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="24" isBold="true" isUnderline="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{pageTitle}]]></textFieldExpression>
@@ -22,16 +22,16 @@
 	<pageHeader>
 		<band height="31" splitType="Stretch">
 			<staticText>
-				<reportElement x="50" y="11" width="122" height="20" uuid="3ee1a7db-ca92-4677-85b0-28abc962b281"/>
+				<reportElement x="21" y="11" width="60" height="20" uuid="3ee1a7db-ca92-4677-85b0-28abc962b281"/>
 				<textElement verticalAlignment="Bottom">
-					<font size="14"/>
+					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Cab ID:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="172" y="11" width="383" height="20" uuid="74adc7f8-216b-4b17-a418-00ba2d0a0d0c"/>
+				<reportElement x="81" y="11" width="474" height="20" uuid="74adc7f8-216b-4b17-a418-00ba2d0a0d0c"/>
 				<textElement verticalAlignment="Bottom">
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{cabID}]]></textFieldExpression>
 			</textField>
