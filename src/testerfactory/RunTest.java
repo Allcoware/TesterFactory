@@ -20,7 +20,7 @@ public class RunTest {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Container container = frame.getContentPane();
         frame.setTitle("Cab Menu");
-        frame.setSize(500, 200);
+        frame.setSize(500, 500);
         
 
         Cab cab=new Cab();
