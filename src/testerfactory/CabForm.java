@@ -137,11 +137,8 @@ public class CabForm extends JResourceForm<Cab> {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        try {
-            new ReportPrinter("Cab Menu",jTextField1.getText(), jTable1);
-        } catch (JRException ex) {
-            Logger.getLogger(CabForm.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        new ReportPrinter(-1, "Cab Menu", null, jTextField1.getText(), null,
+                null, null, null, jTable1);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
